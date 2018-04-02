@@ -1,0 +1,21 @@
+@media ( min-width: 768px ) {
+    .grid-divider {
+        position: relative;
+        margin-top:7px;
+	margin-bottom:7px;
+        padding: 0px;
+    }
+    .grid-divider>[class*='col-'] {
+        position: static;
+    }
+    .grid-divider>[class*='col-']:nth-child(n+2):before {
+        content: "";
+        border-left: 1px solid #DDD;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+    }
+    .col-padding {
+        padding: 0 15px;
+    }
+}
